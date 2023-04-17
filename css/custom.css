@@ -1,0 +1,273 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    background-color: #f5f3f3;
+    margin: 0;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    font-size: 3rem;
+}
+h4 {
+    font-size: 16px;
+    font-weight: 700;
+}
+header {
+    z-index: 10;
+    position: sticky;
+    top: 0;
+    padding: 20px 0 0 0;
+    background: white;
+    text-align: center;
+}
+@media (min-width: 750px) {
+    header {
+        text-align: left;
+    }
+}
+.borrar-curso {
+    position: absolute;
+    background-color: red;
+    border-radius: 50%;
+    margin: -2rem 0 0 -4rem;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+#hero {
+    background-image:url(../img/hero.jpg);
+    height: 350px;
+    background-size: cover;
+}
+#encabezado {
+    margin: 30px 0;
+}
+.submenu {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.submenu #carrito{
+    position: absolute;
+    display: none;
+
+}
+
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right:0;
+    top:100%;
+    z-index: 1;
+    background-color: white;
+    padding: 20px;
+    height: 400px;
+    min-width: 300px;
+    overflow-y: scroll;
+}
+.vacio {
+    padding: 10px;
+    background-color: crimson;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}
+.contenido-hero {
+    margin-top: 80px;
+    color: white;
+}
+.contenido-hero form {
+    position: relative;
+    margin-bottom: 0;
+}
+.contenido-hero form #buscador {
+    height: 50px;
+    margin-bottom: 0;
+}
+.contenido-hero form .submit-buscador {
+    position: absolute;
+    right:0;
+    top:0;
+    height: 100%;
+    padding: 0;
+    display: block;
+    text-indent: -9999px;
+    width: 50px;
+    background-image: url(../img/lupa.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    border:none;
+}
+
+
+.barra {
+    padding: 20px 0;
+    background: #983436; /* Old browsers */
+    background: -moz-linear-gradient(left, #983436 0%, #e44e52 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #983436 0%,#e44e52 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #983436 0%,#e44e52 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#983436', endColorstr='#e44e52',GradientType=1 ); /* IE6-9 */
+}
+
+.barra p {
+    margin:0;
+    color: white;
+}
+.icono {
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 60px;
+    background-size: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+@media (min-width: 750px) {
+    .icono {
+        margin-bottom:0;
+    }
+}
+.icono1 {
+    background-image: url(../img/icono1.png);
+}
+.icono2 {
+    background-image: url(../img/icono2.png);
+}
+.icono3 {
+    background-image: url(../img/icono3.png);
+}
+
+#lista-cursos .row {
+    margin-bottom:20px;
+}
+.agregar-carrito {
+    margin:10px 0;
+}
+
+.card {
+    text-align: center;
+    border: 1px solid #e1e1e1;
+    background: white;
+}
+@media (min-width: 550px) {
+    .card {
+        text-align: left;
+    }
+}
+.info-card  {
+    padding: 10px 20px;
+}
+
+.info-card p,
+.card h4 {
+    margin-bottom: 5px;
+}
+.info-card .precio {
+    text-decoration: line-through;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.info-card .precio span {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+
+.footer {
+    margin-top: 40px;
+    border-top:1px solid #aaa;;
+    padding-top: 40px;
+}
+.footer .menu a{
+display: block;
+margin-bottom: 10px;
+text-decoration: none;
+}
+
+#total {
+    font-size: 2rem;
+    color: black;
+    position: absolute;
+    height: 3rem;
+    width: 8rem;
+    margin-left: 5rem;
+}
+
+.resultados.active {
+    background-color: #e44e52;
+    height: 10rem;
+    width: 46rem;
+    position: relative;
+    border-radius: .5rem;
+    overflow-y: scroll;
+}
+
+
+.resultados.active::-webkit-scrollbar-thumb {
+    background-color: #983436;
+    padding: .5rem;
+    border-radius: 20px;
+}
+
+
+.resultados.active::-webkit-scrollbar {
+    padding: 1rem 1rem;
+    width: .8rem;
+  }
+
+.resultados {
+    list-style: none;
+}
+
+::selection {
+    color: #ffffff;
+    background: #e44e52;
+}
+
+li {
+    margin: 0;
+    padding: 10px 1rem;
+    margin: 0px .3rem 0px 0px;
+    cursor: pointer;
+}
+
+.resultados li:hover {
+    background-color: #983436;
+    border-radius: .5rem;
+}
+li:not(:last-child) {
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.animation {
+    background: linear-gradient(0deg, #e44e52 10%, #ffffff 50%);
+    background-size: 300% 300%;
+    animation : fadeIn 2s  ease-in-out .1s alternate;
+}
+
+@keyframes fadeIn {
+    100%{background-position: 0% -150%}
+}
+
+.irArriba {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(0deg, #e44e52 0%, #ffffff 100%);
+    position: fixed;
+    height: 3rem;
+    width: 3rem;
+    cursor: pointer;
+    right: 2rem;
+    bottom: 2rem;
+}
